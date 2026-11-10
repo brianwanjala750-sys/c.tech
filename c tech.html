@@ -1,0 +1,1882 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="C Tech Cyber Shop in Nandi Hills, Kenya. Printing, photocopying, online services, KRA services, typing, passport photos, graphic design and lamination.">
+
+  <meta name="theme-color" content="#0755c9">
+
+  <title>C Tech Cyber Shop | Nandi Hills</title>
+
+  <style>
+    /* =========================
+       C TECH CYBER SHOP
+       Modern Blue & White Theme
+    ========================== */
+
+    :root {
+      --primary: #0755c9;
+      --primary-dark: #063b91;
+      --primary-light: #eaf2ff;
+      --secondary: #00a6e8;
+      --white: #ffffff;
+      --background: #f5f8ff;
+      --text: #172b4d;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 10px 30px rgba(7, 85, 201, 0.09);
+      --radius: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1150px, 92%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 85px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title span {
+      display: inline-block;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 6px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .logo-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 13px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+    }
+
+    .logo small {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--muted);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-contact {
+      background: var(--primary);
+      color: white !important;
+      padding: 11px 20px;
+      border-radius: 10px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: var(--primary-light);
+      color: var(--primary);
+      border: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      font-size: 24px;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        radial-gradient(circle at 85% 15%, #d8eaff 0, transparent 30%),
+        linear-gradient(135deg, #f5f9ff 0%, #ffffff 60%);
+      padding: 95px 0 90px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 65px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--primary);
+      border: 1px solid #d9e8ff;
+      padding: 9px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero-description {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 540px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 14px 23px;
+      border: 0;
+      border-radius: 11px;
+      font-weight: bold;
+      font-size: 14px;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-outline {
+      background: white;
+      color: var(--primary);
+      border: 1px solid #cbdcff;
+    }
+
+    .hero-note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .hero-note strong {
+      color: var(--text);
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card {
+      background: white;
+      padding: 22px;
+      border-radius: 25px;
+      box-shadow: 0 25px 70px rgba(7, 85, 201, 0.16);
+      border: 1px solid #edf3ff;
+    }
+
+    .hero-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .hero-card-header h3 {
+      font-size: 18px;
+    }
+
+    .status {
+      background: #e8fff2;
+      color: #16834c;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .computer-illustration {
+      min-height: 230px;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #0755c9, #00a6e8);
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .computer-illustration::before,
+    .computer-illustration::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50%;
+    }
+
+    .computer-illustration::before {
+      width: 300px;
+      height: 300px;
+    }
+
+    .computer-illustration::after {
+      width: 200px;
+      height: 200px;
+    }
+
+    .computer {
+      position: relative;
+      z-index: 1;
+      width: 70%;
+      text-align: center;
+    }
+
+    .screen {
+      background: #10243d;
+      border: 7px solid #dbeafe;
+      border-radius: 12px;
+      height: 145px;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 42px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .screen span {
+      font-size: 13px;
+      letter-spacing: 3px;
+      display: block;
+      margin-top: -35px;
+    }
+
+    .computer-base {
+      width: 110%;
+      margin-left: -5%;
+      height: 12px;
+      background: #dbeafe;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .hero-service-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .hero-service {
+      padding: 12px;
+      border-radius: 12px;
+      background: #f6f9ff;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .hero-service span {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    /* SERVICES */
+
+    .services {
+      background: var(--background);
+    }
+
+    .service-search {
+      max-width: 480px;
+      margin: 0 auto 35px;
+      position: relative;
+    }
+
+    .service-search input {
+      width: 100%;
+      padding: 15px 18px 15px 48px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      outline: none;
+      background: white;
+    }
+
+    .service-search input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(7,85,201,0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 17px;
+      top: 13px;
+      font-size: 20px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 25px 21px;
+      border: 1px solid #e9eef8;
+      border-radius: var(--radius);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      font-size: 27px;
+      background: var(--primary-light);
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 17px;
+      margin-bottom: 9px;
+    }
+
+    .service-card p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .service-link {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .no-results {
+      text-align: center;
+      color: var(--muted);
+      grid-column: 1 / -1;
+      padding: 30px;
+    }
+
+    /* WHY CHOOSE US */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .why-content h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .why-content > p {
+      color: var(--muted);
+      margin-bottom: 27px;
+    }
+
+    .benefit {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 22px;
+    }
+
+    .benefit-icon {
+      width: 45px;
+      height: 45px;
+      min-width: 45px;
+      border-radius: 12px;
+      background: var(--primary-light);
+      display: grid;
+      place-items: center;
+      font-size: 21px;
+    }
+
+    .benefit h3 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .benefit p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .why-panel {
+      padding: 35px;
+      background: linear-gradient(135deg, #0755c9, #087ce0);
+      color: white;
+      border-radius: 25px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-panel h3 {
+      font-size: 27px;
+      line-height: 1.3;
+      margin-bottom: 15px;
+    }
+
+    .why-panel > p {
+      color: #dbeafe;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .why-panel .panel-item {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: var(--background);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 25px;
+    }
+
+    .contact-info,
+    .contact-form {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 23px;
+    }
+
+    .contact-item-icon {
+      width: 45px;
+      height: 45px;
+      min-width: 45px;
+      border-radius: 12px;
+      background: var(--primary-light);
+      display: grid;
+      place-items: center;
+      font-size: 21px;
+    }
+
+    .contact-item h4 {
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .contact-item p,
+    .contact-item a {
+      font-size: 13px;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    .contact-item a:hover {
+      color: var(--primary);
+    }
+
+    .contact-form > p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 13px 15px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      outline: none;
+      background: white;
+      color: var(--text);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(7,85,201,0.08);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .contact-form .btn {
+      width: 100%;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #10243d;
+      color: white;
+      padding: 45px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 35px;
+    }
+
+    .footer-brand p {
+      color: #b9c9df;
+      font-size: 13px;
+      max-width: 320px;
+      margin-top: 15px;
+    }
+
+    .footer-title {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 9px;
+    }
+
+    .footer-links a,
+    .footer-links span {
+      color: #b9c9df;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2b4058;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      color: #b9c9df;
+      font-size: 12px;
+    }
+
+    /* FLOATING WHATSAPP */
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      width: 58px;
+      height: 58px;
+      background: #20c76a;
+      color: white;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 27px;
+      z-index: 999;
+      box-shadow: 0 8px 25px rgba(32,199,106,0.35);
+      transition: transform 0.2s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .nav-links {
+        gap: 17px;
+      }
+
+      .hero-grid {
+        gap: 35px;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .section {
+        padding: 65px 0;
+      }
+
+      .navbar {
+        min-height: 70px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px 5%;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.06);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        padding: 12px 0;
+      }
+
+      .nav-contact {
+        display: inline-flex;
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.5px;
+      }
+
+      .hero-visual {
+        max-width: 500px;
+        margin: auto;
+        width: 100%;
+      }
+
+      .why-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: 90%;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        padding: 22px;
+      }
+
+      .contact-info,
+      .contact-form {
+        padding: 22px;
+      }
+
+      .why-panel {
+        padding: 25px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-brand {
+        grid-column: auto;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container navbar">
+
+      <a href="#home" class="logo">
+        <div class="logo-icon">C</div>
+        <div>
+          C TECH
+          <small>CYBER SHOP</small>
+        </div>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              class="nav-contact"
+              href="https://wa.me/254725171466"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          💻 Your Trusted Cyber Shop in Nandi Hills
+        </div>
+
+        <h1>
+          Smart Digital
+          <span>Solutions</span>
+          for Everyone.
+        </h1>
+
+        <p class="hero-description">
+          Welcome to C Tech Cyber Shop. We provide printing,
+          photocopying, online services, KRA services, typing,
+          passport photos, graphic design and more.
+          Your reliable digital service partner in Nandi Hills.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#services" class="btn btn-primary">
+            Explore Our Services →
+          </a>
+
+          <a
+            href="https://wa.me/254725171466?text=Hello%20C%20Tech%20Cyber%20Shop"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+          >
+            💬 Contact Us
+          </a>
+
+        </div>
+
+        <p class="hero-note">
+          📍 <strong>Koitalel Samoei Street</strong>,
+          Nandi Hills, Kenya
+        </p>
+
+      </div>
+
+      <div class="hero-visual">
+
+        <div class="hero-card">
+
+          <div class="hero-card-header">
+            <h3>C Tech Digital Services</h3>
+            <span class="status">Your Cyber Partner</span>
+          </div>
+
+          <div class="computer-illustration">
+
+            <div class="computer">
+
+              <div class="screen">
+                💻
+                <span>C TECH</span>
+              </div>
+
+              <div class="computer-base"></div>
+
+            </div>
+
+          </div>
+
+          <div class="hero-service-list">
+
+            <div class="hero-service">
+              <span>🖨️</span>
+              Printing & Copying
+            </div>
+
+            <div class="hero-service">
+              <span>🌐</span>
+              Online Services
+            </div>
+
+            <div class="hero-service">
+              <span>📄</span>
+              Document Services
+            </div>
+
+            <div class="hero-service">
+              <span>🎨</span>
+              Graphic Design
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+
+  <section class="section services" id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>OUR SERVICES</span>
+
+        <h2>Everything You Need</h2>
+
+        <p>
+          From document printing to online applications,
+          C Tech Cyber Shop provides convenient digital
+          services to help you get things done.
+        </p>
+
+      </div>
+
+      <div class="service-search">
+
+        <span class="search-icon">🔍</span>
+
+        <input
+          type="search"
+          id="serviceSearch"
+          placeholder="Search for a service..."
+          aria-label="Search services"
+        >
+
+      </div>
+
+      <div class="service-grid" id="serviceGrid">
+
+        <!-- PRINTING -->
+
+        <article class="service-card" data-service="printing">
+
+          <div class="service-icon">🖨️</div>
+
+          <h3>Printing Services</h3>
+
+          <p>
+            Document printing for school work, business documents,
+            applications and other printing needs.
+          </p>
+
+          <a href="#" class="service-link" data-order="Printing Services">
+            Inquire on WhatsApp →
+          </a>
+
+        </article>
+
+        <!-- PHOTOCOPYING -->
+
+        <article class="service-card" data-service="photocopying">
+
+          <div class="service-icon">📑</div>
+
+          <h3>Photocopying</h3>
+
+          <p>
+            Convenient photocopying for documents,
+            notes, certificates and other important papers.
+          </p>
+
+          <a href="#" class="service-link" data-order="Photocopying">
+            Inquire on WhatsApp →
+          </a>
+
+        </article>
+
+        <!-- ONLINE SERVICES -->
+
+        <article class="service-card" data-service="online services">
+
+          <div class="service-icon">🌐</div>
+
+          <h3>Online Services</h3>
+
+          <p>
+            Assistance with online applications,
+            digital forms and internet-based services.
+          </p>
+
+          <a href="#" class="service-link" data-order="Online Services">
+            Inquire on WhatsApp →
+          </a>
+
+        </article>
+
+        <!-- TYPING -->
+
+        <article class="service-card" data-service="typing">
+
+          <div class="service-icon">⌨️</div>
+
+          <h3>Typing Services</h3>
+
+          <p>
+            Professional document typing, letters,
+            assignments and general document preparation.
+          </p>
+
+          <a href="#" class="service-link" data-order="Typing Services">
+            Inquire on WhatsApp →
+          </a>
+
+        </article>
+
+        <!-- KRA -->
+
+        <article class="service-card" data-service="kra services">
+
+          <div class="service-icon">📋</div>
+
+          <h3>KRA Services</h3>
+
+          <p>
+            Assistance with KRA-related online services,
+            tax documentation and relevant applications.
+          </p>
+
+          <a href="#" class="service-link" data-order="KRA Services">
+            Inquire on WhatsApp →
+          </a>
+
+        </article>
+
+        <!-- PASSPORT PHOTOS -->
+
+        <article class="service-card" data-service="passport photos">
+
+          <div class="service-icon">📸</div>
+
+          <h3>Passport Photos</h3>
+
+          <p>
+            Passport photo services and assistance
+            with preparing photographs for applications.
+          </p>
+
+          <a href="#" class="service-link" data-order="Passport Photos">
+            Inquire on WhatsApp →
+          </a>
+
+        </article>
+
+        <!-- GRAPHIC DESIGN -->
+
+        <article class="service-card" data-service="graphic design">
+
+          <div class="service-icon">🎨</div>
+
+          <h3>Graphic Design</h3>
+
+          <p>
+            Creative designs for posters, business cards,
+            advertisements and other business materials.
+          </p>
+
+          <a href="#" class="service-link" data-order="Graphic Design">
+            Inquire on WhatsApp →
+          </a>
+
+        </article>
+
+        <!-- LAMINATION -->
+
+        <article class="service-card" data-service="lamination">
+
+          <div class="service-icon">🪪</div>
+
+          <h3>Lamination</h3>
+
+          <p>
+            Protect important documents, certificates
+            and cards with our lamination service.
+          </p>
+
+          <a href="#" class="service-link" data-order="Lamination">
+            Inquire on WhatsApp →
+          </a>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+
+  <section class="section" id="about">
+
+    <div class="container why-grid">
+
+      <div class="why-content">
+
+        <div class="section-title" style="text-align:left; margin-bottom:25px">
+
+          <span>ABOUT C TECH</span>
+
+          <h2>Your Reliable Digital Service Partner</h2>
+
+        </div>
+
+        <p>
+          C Tech Cyber Shop is dedicated to providing
+          convenient cyber services to individuals,
+          students, businesses and the community in
+          Nandi Hills.
+        </p>
+
+        <div class="benefit">
+
+          <div class="benefit-icon">💻</div>
+
+          <div>
+            <h3>Convenient Digital Services</h3>
+
+            <p>
+              Access a variety of computer, printing
+              and online services in one place.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="benefit">
+
+          <div class="benefit-icon">📄</div>
+
+          <div>
+            <h3>Document Solutions</h3>
+
+            <p>
+              Get assistance with document preparation,
+              printing, copying and lamination.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="benefit">
+
+          <div class="benefit-icon">🤝</div>
+
+          <div>
+            <h3>Customer Convenience</h3>
+
+            <p>
+              Contact us directly to ask about services
+              and make your inquiries.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="why-panel">
+
+        <h3>
+          Making Digital Services Easier.
+        </h3>
+
+        <p>
+          Your trusted destination for everyday
+          cyber and document services.
+        </p>
+
+        <div class="panel-item">
+          🖨️ Printing and photocopying
+        </div>
+
+        <div class="panel-item">
+          🌐 Online applications and digital assistance
+        </div>
+
+        <div class="panel-item">
+          🎨 Graphic design and document preparation
+        </div>
+
+        <div class="panel-item">
+          📍 Conveniently located in Nandi Hills
+        </div>
+
+        <a href="#contact" class="btn btn-outline">
+          Get in Touch →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+
+  <section class="section contact" id="contact">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>CONTACT US</span>
+
+        <h2>Let's Get in Touch</h2>
+
+        <p>
+          Need a service or have a question?
+          Contact C Tech Cyber Shop today.
+        </p>
+
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- CONTACT DETAILS -->
+
+        <div class="contact-info">
+
+          <h3>Our Contact Details</h3>
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">📍</div>
+
+            <div>
+              <h4>Location</h4>
+
+              <p>
+                Koitalel Samoei Street,<br>
+                Nandi Hills, Kenya
+              </p>
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">📞</div>
+
+            <div>
+              <h4>Phone Number</h4>
+
+              <a href="tel:+254725171466">
+                0725 171 466
+              </a>
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">💬</div>
+
+            <div>
+              <h4>WhatsApp</h4>
+
+              <a
+                href="https://wa.me/254725171466"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chat with C Tech
+              </a>
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-item-icon">🕒</div>
+
+            <div>
+              <h4>Opening Hours</h4>
+
+              <p>
+                Contact us to confirm our
+                current opening hours.
+              </p>
+            </div>
+
+          </div>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Koitalel+Samoei+Street+Nandi+Hills+Kenya"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            📍 Find Our Location
+          </a>
+
+        </div>
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-form">
+
+          <h3>Send Us an Inquiry</h3>
+
+          <p>
+            Fill in your details and your inquiry
+            will be prepared for WhatsApp.
+          </p>
+
+          <form id="contactForm">
+
+            <div class="form-group">
+
+              <label for="customerName">
+                Your Name
+              </label>
+
+              <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your name"
+                required
+                maxlength="100"
+              >
+
+            </div>
+
+            <div class="form-group">
+
+              <label for="customerService">
+                Select Service
+              </label>
+
+              <select id="customerService" required>
+
+                <option value="">
+                  Choose a service
+                </option>
+
+                <option>Printing Services</option>
+
+                <option>Photocopying</option>
+
+                <option>Online Services</option>
+
+                <option>Typing Services</option>
+
+                <option>KRA Services</option>
+
+                <option>Passport Photos</option>
+
+                <option>Graphic Design</option>
+
+                <option>Lamination</option>
+
+                <option>Other Inquiry</option>
+
+              </select>
+
+            </div>
+
+            <div class="form-group">
+
+              <label for="customerMessage">
+                Your Message
+              </label>
+
+              <textarea
+                id="customerMessage"
+                placeholder="Describe what you need..."
+                required
+                maxlength="2000"
+              ></textarea>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Send Inquiry on WhatsApp →
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <a href="#home" class="logo" style="color:white">
+
+            <div class="logo-icon">C</div>
+
+            <div>
+              C TECH
+              <small style="color:#b9c9df">
+                CYBER SHOP
+              </small>
+            </div>
+
+          </a>
+
+          <p>
+            Your trusted cyber shop in Nandi Hills.
+            Providing convenient digital, printing
+            and document services.
+          </p>
+
+        </div>
+
+        <div>
+
+          <h3 class="footer-title">
+            Quick Links
+          </h3>
+
+          <ul class="footer-links">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#services">Our Services</a></li>
+
+            <li><a href="#about">About Us</a></li>
+
+            <li><a href="#contact">Contact Us</a></li>
+
+          </ul>
+
+        </div>
+
+        <div>
+
+          <h3 class="footer-title">
+            Contact Information
+          </h3>
+
+          <ul class="footer-links">
+
+            <li>
+              <span>📍 Nandi Hills, Kenya</span>
+            </li>
+
+            <li>
+              <a href="tel:+254725171466">
+                📞 0725 171 466
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/254725171466"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                💬 WhatsApp
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p>
+          © <span id="currentYear"></span>
+          C Tech Cyber Shop. All rights reserved.
+        </p>
+
+        <p>
+          Nandi Hills, Kenya
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+
+  <a
+    href="https://wa.me/254725171466?text=Hello%20C%20Tech%20Cyber%20Shop"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact C Tech on WhatsApp"
+    title="Chat with C Tech"
+  >
+    ☎
+  </a>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    // =============================
+    // C TECH CYBER SHOP JAVASCRIPT
+    // =============================
+
+    const WHATSAPP_NUMBER = "254725171466";
+
+    // Open WhatsApp with a prepared message
+
+    function openWhatsApp(message) {
+
+      const encodedMessage = encodeURIComponent(message);
+
+      const whatsappURL =
+        `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+      window.open(
+        whatsappURL,
+        "_blank",
+        "noopener,noreferrer"
+      );
+
+    }
+
+    // =============================
+    // MOBILE NAVIGATION
+    // =============================
+
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const navLinks =
+      document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+
+      const isOpen =
+        navLinks.classList.toggle("active");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+      );
+
+      menuToggle.textContent =
+        isOpen ? "✕" : "☰";
+
+    });
+
+    // Close mobile menu after clicking a navigation link
+
+    document.querySelectorAll("#navLinks a")
+      .forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+          navLinks.classList.remove("active");
+
+          menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          menuToggle.textContent = "☰";
+
+        });
+
+      });
+
+    // =============================
+    // SERVICE SEARCH
+    // =============================
+
+    const serviceSearch =
+      document.getElementById("serviceSearch");
+
+    const serviceCards =
+      document.querySelectorAll(".service-card");
+
+    const serviceGrid =
+      document.getElementById("serviceGrid");
+
+    serviceSearch.addEventListener("input", function () {
+
+      const searchTerm =
+        serviceSearch.value
+          .trim()
+          .toLowerCase();
+
+      let visibleCount = 0;
+
+      serviceCards.forEach(function (card) {
+
+        const serviceName =
+          card.dataset.service.toLowerCase();
+
+        const cardText =
+          card.textContent.toLowerCase();
+
+        const matches =
+          serviceName.includes(searchTerm) ||
+          cardText.includes(searchTerm);
+
+        card.style.display =
+          matches ? "" : "none";
+
+        if (matches) {
+          visibleCount++;
+        }
+
+      });
+
+      // Display a message when no services match
+
+      let noResults =
+        document.getElementById("noResults");
+
+      if (visibleCount === 0) {
+
+        if (!noResults) {
+
+          noResults =
+            document.createElement("p");
+
+          noResults.id = "noResults";
+
+          noResults.className = "no-results";
+
+          noResults.textContent =
+            "No services found. Please try another search.";
+
+          serviceGrid.appendChild(noResults);
+
+        }
+
+      } else if (noResults) {
+
+        noResults.remove();
+
+      }
+
+    });
+
+    // =============================
+    // SERVICE WHATSAPP BUTTONS
+    // =============================
+
+    document.querySelectorAll("[data-order]")
+      .forEach(function (link) {
+
+        link.addEventListener("click", function (event) {
+
+          event.preventDefault();
+
+          const service =
+            link.dataset.order;
+
+          const message =
+            `Hello C Tech Cyber Shop. ` +
+            `I would like to inquire about ${service}. ` +
+            `Please provide more information.`;
+
+          openWhatsApp(message);
+
+        });
+
+      });
+
+    // =============================
+    // CONTACT FORM
+    // =============================
+
+    const contactForm =
+      document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function (event) {
+
+      event.preventDefault();
+
+      const customerName =
+        document.getElementById("customerName")
+          .value.trim();
+
+      const customerService =
+        document.getElementById("customerService")
+          .value;
+
+      const customerMessage =
+        document.getElementById("customerMessage")
+          .value.trim();
+
+      // Validate required information
+
+      if (
+        !customerName ||
+        !customerService ||
+        !customerMessage
+      ) {
+
+        alert(
+          "Please complete all required fields."
+        );
+
+        return;
+
+      }
+
+      // Prepare WhatsApp inquiry
+
+      const message =
+        `Hello C Tech Cyber Shop!\n\n` +
+        `My name is ${customerName}.\n\n` +
+        `Service: ${customerService}\n\n` +
+        `Message: ${customerMessage}\n\n` +
+        `I am contacting you through your website.`;
+
+      // Open WhatsApp
+
+      openWhatsApp(message);
+
+    });
+
+    // =============================
+    // CURRENT YEAR
+    // =============================
+
+    document.getElementById("currentYear")
+      .textContent = new Date().getFullYear();
+
+  </script>
+
+</body>
